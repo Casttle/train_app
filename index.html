@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <title>Train App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron" style="background-color: brown; color: white">
+            <h1 class="text-center">Train Transports</h1>
+            <h3 class="text-center">A Comprehensive Directory Train Destinations</h3>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="card mb-4 p-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Add Train</h3>
+                        <form>
+                            <div class="form-group row">
+                                <label>Train Name</label>
+                                <input class="form-control" id="trainName" placeholder="Name of the Train" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label>Destination</label>
+                                <input class="form-control" id="destination" placeholder="Destination" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label>First Train Arrival</label>
+                                <input class="form-control" id="firstTime" placeholder="24:00" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label>Frequency</label>
+                                <input class="form-control" id="frequency" placeholder="In Minutes" type="text">
+                            </div>
+                            <button class="btn btn-primary" id="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Current Train Schedule</h3>
+                        <table class="table table-sm table-hover" id="trainList">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Train Name</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Frequency (min)</th>
+                                    <th scope="col">Next Attival</th>
+                                    <th scope="col">Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
